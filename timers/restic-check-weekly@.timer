@@ -1,0 +1,11 @@
+[Unit]
+Description=Weekly restic check of %i
+
+[Timer]
+OnCalendar=Mon *-*-* 02:00:00
+AccuracySec=1us
+# RandomizedDelaySec=1h
+Unit=restic-check@%i.service
+
+[Install]
+WantedBy=timers.target

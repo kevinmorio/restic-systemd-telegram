@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily restic backup of %i
+
+[Timer]
+OnCalendar=daily
+AccuracySec=1us
+# RandomizedDelaySec=1h
+Unit=restic-backup@%i.service
+
+[Install]
+WantedBy=timers.target

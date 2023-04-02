@@ -1,0 +1,7 @@
+[Unit]
+Description=Telegram status messages for %i
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/telegram.sh/config
+ExecStart=/usr/bin/telegram-systemd %i

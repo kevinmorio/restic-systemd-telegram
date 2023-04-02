@@ -1,0 +1,11 @@
+[Unit]
+Description=Weekly restic forget of %i
+
+[Timer]
+OnCalendar=Mon *-*-* 01:00:00
+AccuracySec=1us
+# RandomizedDelaySec=1h
+Unit=restic-forget@%i.service
+
+[Install]
+WantedBy=timers.target
