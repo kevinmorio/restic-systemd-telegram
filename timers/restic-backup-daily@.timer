@@ -5,6 +5,7 @@ Description=Daily restic backup of %i
 OnCalendar=daily
 AccuracySec=1us
 # RandomizedDelaySec=1h
+Persistent=true
 Unit=restic-backup@%i.service
 
 [Install]
