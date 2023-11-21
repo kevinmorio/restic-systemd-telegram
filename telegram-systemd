@@ -5,4 +5,4 @@ set -Eeuo pipefail
 SERVICE="$1"
 MESSAGE="$(printf '```%s```' "$(systemctl status "$SERVICE")")"
 
-/home/pi/telegram.sh/telegram -M -T "$SERVICE on $(date +'%F %H:%M:%S')" "$MESSAGE"
+/usr/bin/telegram.sh/telegram -M -T "$SERVICE on $(date +'%F %H:%M:%S')" "$MESSAGE"
