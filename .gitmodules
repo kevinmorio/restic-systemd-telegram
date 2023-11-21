@@ -1,0 +1,3 @@
+[submodule "telegram.sh"]
+	path = telegram.sh
+	url = https://github.com/fabianonline/telegram.sh
